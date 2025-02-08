@@ -14,7 +14,7 @@ public class Contador {
             segundoNumero = scanner.nextInt();
 
             int resultadoDiferenca = calculaDiferenca(primeiroNumero, segundoNumero);
-            imprimirValores(resultadoDiferenca);
+            imprimirSequenciaNumerica(resultadoDiferenca);
         } catch (ParametrosInvalidosException e) {
             System.out.println(e.getMessage());
         } catch (InputMismatchException e) {
@@ -32,7 +32,7 @@ public class Contador {
         return numero2 - numero1;
     }
 
-    public static void imprimirValores(int indice) {
+    public static void imprimirSequenciaNumerica(int indice) {
         for(int i = 1; i <= indice; i++) {
             System.out.println("Imprimindo o número: " + i);
         }
